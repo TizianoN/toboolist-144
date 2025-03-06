@@ -1,0 +1,140 @@
+/* # RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #9c9c9c;
+}
+
+/* # UTILITY */
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.btn {
+  padding: 5px 8px;
+  border: solid 1px currentColor;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  background-color: #44aaed;
+  color: white;
+  border-color: #44aaed;
+}
+
+.btn.btn-secondary {
+  background-color: white;
+  color: gray;
+  border-color: gray;
+}
+
+.label {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 6px 10px;
+  background-color: #aaa;
+  color: white;
+  font-size: 10px;
+  line-height: 13px;
+  border-radius: 12px;
+  margin-left: 5px;
+}
+
+.label.label-editorial {
+  background-color: #48a6e9;
+}
+
+.label.label-goals {
+  background-color: #9a74e0;
+}
+
+.label.label-recruiting {
+  background-color: #5dc6a8;
+}
+
+/* # HEADER */
+
+.page-header {
+  height: 80px;
+  line-height: 80px;
+  background-color: white;
+}
+
+.page-header .logo-img,
+.page-header .logo-title {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* # MAIN */
+
+main {
+  margin-top: 30px;
+}
+
+.card {
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.task-list-section {
+  margin-top: 30px;
+}
+
+.task-list-title::before {
+  content: '\25BE';
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.task-list {
+  margin-top: 8px;
+  list-style-type: none;
+}
+
+.task-list > .task-item {
+  line-height: 30px;
+}
+
+.task-list > .task-item > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.task-list > .task-item::before {
+  border-radius: 50%;
+  height: 16px;
+  line-height: 16px;
+  width: 16px;
+  text-align: center;
+  border: 1px solid currentColor;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.task-list > .task-item.task-done::before {
+  content: '\2713';
+  color: #70caac;
+}
+
+.task-list > .task-item.task-undone::before {
+  content: '\292B';
+  color: #c85d72;
+}
