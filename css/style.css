@@ -8,13 +8,13 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #9c9c9c;
+  background-color: #f6f8fa;
 }
 
 /* # UTILITY */
 
 .container {
-  max-width: 1000px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
@@ -22,11 +22,13 @@ body {
 }
 
 .btn {
-  padding: 5px 8px;
+  padding: 6px 10px;
   border: solid 1px currentColor;
   background-color: transparent;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .btn.btn-primary {
@@ -37,19 +39,19 @@ body {
 
 .btn.btn-secondary {
   background-color: white;
-  color: gray;
-  border-color: gray;
+  color: #bbb;
+  border-color: #bbb;
 }
 
 .label {
   display: inline-block;
   vertical-align: middle;
-  padding: 6px 10px;
+  padding: 5px 10px;
   background-color: #aaa;
   color: white;
   font-size: 10px;
   line-height: 13px;
-  border-radius: 12px;
+  border-radius: 8px;
   margin-left: 5px;
 }
 
@@ -65,35 +67,57 @@ body {
   background-color: #5dc6a8;
 }
 
+.label.label-mobile {
+  background-color: #ef9d34;
+}
+
+.label.label-website {
+  background-color: #d5639d;
+}
+
+.label.label-sales {
+  background-color: #afc72a;
+}
+
 /* # HEADER */
 
 .page-header {
-  height: 80px;
-  line-height: 80px;
   background-color: white;
+  line-height: 80px;
 }
 
-.page-header .logo-img,
-.page-header .logo-title {
+.page-header > .container > * {
   vertical-align: middle;
   display: inline-block;
-  margin-right: 10px;
+}
+
+.menu-link {
+  list-style-type: none;
+}
+
+.menu-link > li {
+  display: inline-block;
 }
 
 /* # MAIN */
 
 main {
-  margin-top: 30px;
+  margin-top: 100px;
 }
 
 .card {
-  padding: 30px;
+  padding: 20px 40px;
   background-color: white;
   border-radius: 10px;
+  color: #333;
 }
 
 .task-list-section {
   margin-top: 30px;
+}
+
+.task-list-title {
+  font-size: 20px;
 }
 
 .task-list-title::before {
@@ -109,6 +133,11 @@ main {
 
 .task-list > .task-item {
   line-height: 30px;
+}
+
+.task-item > .task-title {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .task-list > .task-item > * {
@@ -135,6 +164,6 @@ main {
 }
 
 .task-list > .task-item.task-undone::before {
-  content: '\292B';
+  content: '\2A09';
   color: #c85d72;
 }
